@@ -1,7 +1,27 @@
-.card {
+#square {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #d11d1d, #ffaf54);
+  border-radius: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: (0.8);
+}
+
+.circle {
   width: 250px;
   height: 250px;
   background: linear-gradient(135deg, #1dd1a1, #54a0ff);
+  border-radius: 100%;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: (0.8);
+}
+
+.triangle {
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(135deg, #8f1dd1, #ff54ff);
   border-radius: 40px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   opacity: 0;

@@ -1,15 +1,25 @@
-gsap.to(".card", {
+gsap.to(".circle, #square, .triangle", {
     opacity: 1,
-    scale: 1,
+    scale: 1.1,
     duration: 1,
     onComplete: () =>
     {
-        gsap.to(".card", {
+        gsap.to(".circle", {
             y: -20,
-            boxShadow: "0 20px 50px rgba(255, 255, 255, 0.4)", // added this for pulse effect
             repeat: -1,
             yoyo: true,
-            delay: 0.2,
         });
-    },
+        gsap.to("#square", {
+            y: -20,
+            repeat: -1,
+            yoyo: true,
+            delay: 0.2
+        });
+        gsap.to(".triangle", {
+            y: -20,
+            repeat: -1,
+            yoyo: true,
+            delay: 0.4
+        });
+    }
 });
