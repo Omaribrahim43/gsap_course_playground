@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 gsap.to(".circle, #square, .triangle", {
     opacity: 1,
     scale: 1.1,
